@@ -5427,7 +5427,8 @@
         "Picture 3",
         "Picture 4"
       ],
-      "correctAnswer": 4
+      "correctAnswer": 4,
+      "state": "Berlin"
     },
     {
       "id": 322,
@@ -5445,7 +5446,8 @@
         "Pankow",
         "Mecklenburg Lake District"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "state": "Berlin"
     },
     {
       "id": 323,
@@ -5463,7 +5465,8 @@
         "5",
         "6"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "state": "Berlin"
     },
     {
       "id": 324,
@@ -5481,7 +5484,8 @@
         "18",
         "20"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "state": "Berlin"
     },
     {
       "id": 325,
@@ -5499,7 +5503,8 @@
         "green-white-red",
         "black-gold"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "state": "Berlin"
     },
     {
       "id": 326,
@@ -5517,7 +5522,8 @@
         "at the consumer advice center",
         "at the State Center for Political Education"
       ],
-      "correctAnswer": 4
+      "correctAnswer": 4,
+      "state": "Berlin"
     },
     {
       "id": 327,
@@ -5535,7 +5541,8 @@
         "Brandenburg",
         "Hesse"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "state": "Berlin"
     },
     {
       "id": 328,
@@ -5554,7 +5561,8 @@
         "3",
         "4"
       ],
-      "correctAnswer": 4
+      "correctAnswer": 4,
+      "state": "Berlin"
     },
     {
       "id": 329,
@@ -5572,7 +5580,8 @@
         "President of the Senate",
         "Governing Mayor"
       ],
-      "correctAnswer": 4
+      "correctAnswer": 4,
+      "state": "Berlin"
     },
     {
       "id": 330,
@@ -5590,7 +5599,200 @@
         "Senator for External Relations",
         "Senator of Justice"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "state": "Berlin"
+    },
+    {
+      "id": 331,
+      "question": "Welches ist ein Landkreis in Rheinland-Pfalz?",
+      "question_trans": "Which is a district (Landkreis) in Rhineland-Palatinate?",
+      "options": [
+        "Westerwaldkreis",
+        "Altötting",
+        "Emsland",
+        "Prignitz"
+      ],
+      "options_trans": [
+        "Westerwaldkreis",
+        "Altötting",
+        "Emsland",
+        "Prignitz"
+      ],
+      "correctAnswer": 1,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 332,
+      "question": "Für wie viele Jahre wird das Landesparlament in Rheinland-Pfalz gewählt?",
+      "question_trans": "For how many years is the state parliament of Rhineland-Palatinate elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 333,
+      "question": "Ab welchem Alter darf man in Rheinland-Pfalz bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Rhineland-Palatinate?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 3,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 334,
+      "question": "Welche Farben hat die Landesflagge von Rheinland-Pfalz?",
+      "question_trans": "What colors does the state flag of Rhineland-Palatinate have?",
+      "options": [
+        "schwarz-rot-gold",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "weiß-rot"
+      ],
+      "options_trans": [
+        "black-red-gold",
+        "blue-white-red",
+        "green-white-red",
+        "white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 335,
+      "question": "Wo können Sie sich in Rheinland-Pfalz über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Rhineland-Palatinate?",
+      "options": [
+        "beim Ordnungsamt der Gemeinde",
+        "bei den Kirchen",
+        "bei der Verbraucherzentrale",
+        "bei der Landeszentrale für politische Bildung"
+      ],
+      "options_trans": [
+        "at the public order office of the municipality",
+        "at the churches",
+        "at the consumer advice center",
+        "at the State Center for Political Education"
+      ],
+      "correctAnswer": 4,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 336,
+      "question": "Wie heißt die Landeshauptstadt von Rheinland-Pfalz?",
+      "question_trans": "What is the state capital of Rhineland-Palatinate?",
+      "options": [
+        "Mainz",
+        "Kaiserslautern",
+        "Ludwigshafen",
+        "Koblenz"
+      ],
+      "options_trans": [
+        "Mainz",
+        "Kaiserslautern",
+        "Ludwigshafen",
+        "Koblenz"
+      ],
+      "correctAnswer": 1,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 337,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef von Rheinland-Pfalz?",
+      "question_trans": "What is the head of government of Rhineland-Palatinate called?",
+      "options": [
+        "Ministerpräsidentin/Ministerpräsident",
+        "Oberbürgermeisterin/Oberbürgermeister",
+        "Präsidentin/Präsident des Senates",
+        "Regierende Bürgermeisterin/Regierender Bürgermeister"
+      ],
+      "options_trans": [
+        "Minister-President",
+        "Lord Mayor",
+        "President of the Senate",
+        "Governing Mayor"
+      ],
+      "correctAnswer": 1,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 338,
+      "question": "Welche Ministerin/welchen Minister hat Rheinland-Pfalz nicht?",
+      "question_trans": "Which minister does Rhineland-Palatinate not have?",
+      "options": [
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister",
+        "Außenministerin/Außenminister",
+        "Justizministerin/Justizminister"
+      ],
+      "options_trans": [
+        "Minister of Finance",
+        "Minister of the Interior",
+        "Minister of Foreign Affairs",
+        "Minister of Justice"
+      ],
+      "correctAnswer": 3,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 339,
+      "question": "Welches Wappen gehört zum Bundesland Rheinland-Pfalz?",
+      "question_trans": "Which coat of arms belongs to the federal state of Rhineland-Palatinate?",
+      "img": "339.png",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 2,
+      "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 340,
+      "question": "Welches Bundesland ist Rheinland-Pfalz?",
+      "question_trans": "Which federal state is Rhineland-Palatinate?",
+      "img": "340.png",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "state": "Rheinland-Pfalz"
     }
   ]
 }

@@ -1,0 +1,654 @@
+/*
+  Visual language: a printed civic exam booklet / ballot paper, not a SaaS card kit.
+  Square corners, hairline rules, a stamped reference number for each question,
+  and options laid out as ballot lines with a fillable square marker.
+*/
+
+:root {
+    --paper: #efeae0;
+    --paper-raised: #f7f4ec;
+    --ink: #201f1d;
+    --muted: #746c5e;
+    --line: #cabfa9;
+    --line-strong: #201f1d;
+    --gold: #8a6a24;
+    --gold-ink: #f7f4ec;
+    --red: #973526;
+    --red-ink: #f7f4ec;
+    --focus-ring: #2b6cb0;
+}
+
+[data-theme="dark"] {
+    --paper: #1b1a17;
+    --paper-raised: #232019;
+    --ink: #ece7da;
+    --muted: #9c9481;
+    --line: #45402f;
+    --line-strong: #ece7da;
+    --gold: #d1ab3e;
+    --gold-ink: #201f1d;
+    --red: #d97a68;
+    --red-ink: #201f1d;
+    --focus-ring: #5b9bd9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: var(--ink);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+    background-color: var(--paper);
+    transition: background-color 0.2s, color 0.2s, max-width 0.2s;
+    overflow-x: hidden;
+}
+
+/* Two-column mode widens the page: each column keeps its own comfortable
+   reading measure instead of the single-column page just getting cramped. */
+body.wide {
+    max-width: 1180px;
+}
+
+a {
+    color: inherit;
+}
+
+.masthead {
+    margin-bottom: 24px;
+}
+
+.masthead h1 {
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+}
+
+.masthead .subtitle {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0;
+}
+
+.error {
+    background-color: transparent;
+    border: 1px solid var(--red);
+    border-radius: 0;
+    padding: 16px 18px;
+    margin: 20px 0;
+    color: var(--red);
+}
+
+.quiz-container {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.quiz-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px 16px;
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line-strong);
+}
+
+.quiz-header h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--muted);
+    margin: 0;
+    text-transform: none;
+}
+
+.score-container {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.question-container {
+    margin: 0;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    gap: 14px;
+}
+
+.question-container:first-child {
+    padding-top: 4px;
+}
+
+/* Two-column mode: a booklet page split down the middle, like a two-column
+   ballot sheet, rather than a denser version of the single-column list. */
+#questionsContainer.columns-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    position: relative;
+}
+
+#questionsContainer.columns-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: var(--line);
+}
+
+#questionsContainer.columns-2 .question-container {
+    padding: 22px 0;
+}
+
+#questionsContainer.columns-2 .question-container:nth-child(-n+2) {
+    padding-top: 4px;
+}
+
+@media (max-width: 760px) {
+    #questionsContainer.columns-2 {
+        display: block;
+    }
+
+    #questionsContainer.columns-2::before {
+        display: none;
+    }
+}
+
+.question-id {
+    flex: 0 0 auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    padding: 3px 7px;
+    height: fit-content;
+    min-width: 2.4em;
+    text-align: center;
+}
+
+.question-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.question {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 18.5px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin-bottom: 10px;
+}
+
+.question-body img {
+    display: block;
+    max-width: 100%;
+    margin: 4px 0 14px;
+    border: 1px solid var(--line);
+}
+
+.translation {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 14px;
+    visibility: hidden;
+    transition: color 0.2s;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option {
+    padding: 9px 4px;
+    margin-bottom: 2px;
+    background-color: transparent;
+    border-radius: 0;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 16px;
+}
+
+.option:hover {
+    background-color: var(--paper-raised);
+}
+
+.option-marker {
+    flex: 0 0 auto;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    border: 1.5px solid var(--muted);
+    display: inline-block;
+    position: relative;
+}
+
+.option-mark {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.option-translation {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 14px;
+    display: flex;
+    visibility: hidden;
+    transition: color 0.2s;
+    margin-top: 2px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+@keyframes stamp-in {
+    0% { transform: scale(1.6) rotate(-8deg); opacity: 0; }
+    60% { transform: scale(0.92) rotate(2deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0); }
+}
+
+.selected .option-marker,
+.study-answer .option-marker {
+    border-color: var(--line-strong);
+}
+
+.option.correct {
+    border-left-color: var(--gold);
+}
+
+.option.correct .option-marker::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: var(--gold);
+    animation: stamp-in 0.22s ease-out;
+}
+
+.option.incorrect {
+    border-left-color: var(--red);
+}
+
+.option.incorrect .option-marker::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: var(--red);
+    animation: stamp-in 0.22s ease-out;
+}
+
+.option.study-answer:not(.correct):not(.incorrect) {
+    border-left-color: var(--gold);
+}
+
+.option.study-answer:not(.correct):not(.incorrect) .option-marker::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1.5px solid var(--gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .option.correct .option-marker::after,
+    .option.incorrect .option-marker::after {
+        animation: none;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line-strong);
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--ink);
+    color: var(--paper);
+}
+
+button:disabled {
+    color: var(--muted);
+    border-color: var(--line);
+    cursor: not-allowed;
+}
+
+.translation-toggle {
+    margin-bottom: 10px;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.answer-toggle {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+#paginationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.page-item {
+    margin: 2px;
+    padding: 4px 9px;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--muted);
+    min-width: auto;
+    text-align: center;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.page-item:hover {
+    color: var(--ink);
+}
+
+.page-item.active {
+    background-color: transparent;
+    color: var(--ink);
+    border-bottom-color: var(--gold);
+}
+
+@media (max-width: 576px) {
+    .pagination {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #paginationContainer {
+        order: 2;
+        margin: 10px 0;
+    }
+
+    .page-item {
+        padding: 6px 10px;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .jump-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.controls-container {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 14px 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+}
+
+.right-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: flex-end;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    padding: 7px 14px;
+    background-color: transparent;
+    color: var(--ink);
+    text-decoration: none;
+    border: 1px solid var(--line-strong);
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.nav-link:hover {
+    background-color: var(--ink);
+    color: var(--paper);
+}
+
+.jump-container {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+#jumpToQuestion {
+    width: 46px;
+    padding: 5px;
+    margin: 0 8px;
+    background-color: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.file-input {
+    margin-bottom: 20px;
+}
+
+#fileInput {
+    display: none;
+}
+
+.file-label {
+    padding: 8px 16px;
+    background-color: var(--gold);
+    color: var(--gold-ink);
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Field groups: labelled bordered boxes, like a paper form's data fields */
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.field-label {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+}
+
+.field-group select {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 13.5px;
+    color: var(--ink);
+    background-color: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: 0;
+    padding: 6px 8px;
+    min-width: 160px;
+    max-width: 100%;
+}
+
+@media (max-width: 480px) {
+    .field-group select {
+        min-width: 120px;
+    }
+}
+
+/* Toggle switch restyled as a bordered square control, not an iOS pill */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-label {
+    font-size: 12px;
+    color: var(--muted);
+    margin-right: 0;
+}
+
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    width: 42px;
+    height: 22px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 1.5px solid var(--line-strong);
+    transition: 0.15s;
+    border-radius: 0;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    top: 3px;
+    background-color: var(--muted);
+    transition: 0.15s;
+    border-radius: 0;
+}
+
+input:checked + .slider {
+    border-color: var(--gold);
+}
+
+input:checked + .slider::before {
+    transform: translateX(19px);
+    background-color: var(--gold);
+}
+
+.theme-icon {
+    font-size: 1rem;
+}
+
+/* Results section (test-your-knowledge.html) */
+.results-section {
+    background-color: transparent;
+    border: 1px solid var(--line-strong);
+    border-radius: 0;
+    padding: 26px;
+    margin-top: 20px;
+    text-align: left;
+    display: none;
+}
+
+.results-score {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.results-message {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.restart-btn {
+    margin-top: 10px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background-color: var(--line);
+    border-radius: 0;
+    margin: 18px 0 24px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--gold);
+    transition: width 0.3s ease;
+    border-radius: 0;
+    width: 0%;
+}

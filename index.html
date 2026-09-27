@@ -4,389 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Einbürgerungstest</title>
-    <style>
-        :root {
-            /* Light theme variables */
-            --background-color: #f5f5f5;
-            --text-color: #333;
-            --card-background: white;
-            --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            --border-color: #eee;
-            --option-background: #f9f9f9;
-            --option-hover: #eaeaea;
-            --button-color: #007bff;
-            --button-hover: #0069d9;
-            --pagination-background: #f0f0f0;
-            --selected-background: #d4edda;
-            --selected-border: #c3e6cb;
-            --incorrect-background: #f8d7da;
-            --incorrect-border: #f5c6cb;
-            --error-background: #f8d7da;
-            --error-border: #f5c6cb;
-            --error-text: #721c24;
-            --translation-color: #666;
-        }
-
-        [data-theme="dark"] {
-            /* Dark theme variables */
-            --background-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --card-background: #2d2d2d;
-            --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            --border-color: #444;
-            --option-background: #3d3d3d;
-            --option-hover: #4a4a4a;
-            --button-color: #0066cc;
-            --button-hover: #0055aa;
-            --pagination-background: #3d3d3d;
-            --selected-background: #264d36;
-            --selected-border: #2c6a42;
-            --incorrect-background: #562c2c;
-            --incorrect-border: #6b3838;
-            --error-background: #562c2c;
-            --error-border: #6b3838;
-            --error-text: #ffb0b0;
-            --translation-color: #aaa;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: var(--background-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        
-        .error {
-            background-color: var(--error-background);
-            border: 1px solid var(--error-border);
-            border-radius: 5px;
-            padding: 20px;
-            margin: 20px 0;
-            color: var(--error-text);
-        }
-        
-        .quiz-container {
-            background-color: var(--card-background);
-            border-radius: 10px;
-            box-shadow: var(--card-shadow);
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        
-        .quiz-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-        
-        .score-container {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        
-        .question-container {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-        
-        .question {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .translation {
-            font-size: 16px;
-            color: var(--translation-color);
-            margin-bottom: 15px;
-            font-style: italic;
-            visibility: hidden;
-            transition: color 0.3s;
-        }
-
-        .options {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .option {
-            padding: 10px 15px;
-            margin-bottom: 10px;
-            background-color: var(--option-background);
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .option:hover {
-            background-color: var(--option-hover);
-        }
-        
-        .option-translation {
-            color: var(--translation-color);
-            font-style: italic;
-            display: flex;
-            visibility: hidden;
-            transition: color 0.3s;
-        }
-        
-        .visible {
-            visibility: visible;
-        }
-
-        .selected {
-            background-color: var(--selected-background);
-            border: 1px solid var(--selected-border);
-        }
-        
-        .correct {
-            background-color: var(--selected-background);
-            border: 1px solid var(--selected-border);
-        }
-        
-        .incorrect {
-            background-color: var(--incorrect-background);
-            border: 1px solid var(--incorrect-border);
-        }
-        
-        .controls {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        
-        button {
-            padding: 8px 16px;
-            background-color: var(--button-color);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        button:hover {
-            background-color: var(--button-hover);
-        }
-        
-        button:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-        }
-        
-        .translation-toggle {
-            margin-bottom: 10px;
-        }
-        
-        .pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        
-        #paginationContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 100%;
-        }
-        
-        .page-item {
-            margin: 4px;
-            padding: 5px 10px;
-            border-radius: 3px;
-            cursor: pointer;
-            background-color: var(--pagination-background);
-            min-width: 30px;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-        
-        .page-item.active {
-            background-color: var(--button-color);
-            color: white;
-        }
-        
-        @media (max-width: 576px) {
-            .pagination {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            #paginationContainer {
-                order: 2;
-                margin: 10px 0;
-            }
-            
-            .page-item {
-                padding: 8px 12px;
-            }
-        }
-        
-        .navigation {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-            gap: 15px;
-        }
-        
-        @media (max-width: 768px) {
-            .navigation {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .jump-container {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-        
-        .controls-container {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .right-controls {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-        
-        .navigation-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .nav-link {
-            padding: 8px 16px;
-            background-color: var(--button-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        .nav-link:hover {
-            background-color: var(--button-hover);
-        }
-        
-        .jump-container {
-            display: flex;
-            align-items: center;
-        }
-        
-        #jumpToQuestion {
-            width: 50px;
-            padding: 5px;
-            margin: 0 10px;
-            background-color: var(--card-background);
-            color: var(--text-color);
-            border: 1px solid var(--border-color);
-            transition: background-color 0.3s, color 0.3s, border 0.3s;
-        }
-        
-        .file-input {
-            margin-bottom: 20px;
-        }
-        
-        #fileInput {
-            display: none;
-        }
-        
-        .file-label {
-            padding: 8px 16px;
-            background-color: #28a745;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-            display: inline-block;
-        }
-        
-        /* Theme Toggle Switch */
-        .theme-switch-wrapper {
-            display: flex;
-            align-items: center;
-        }
-        
-        .theme-switch {
-            display: inline-block;
-            position: relative;
-            width: 60px;
-            height: 34px;
-        }
-        
-        .theme-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 34px;
-        }
-        
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-        
-        input:checked + .slider {
-            background-color: var(--button-color);
-        }
-        
-        input:checked + .slider:before {
-            transform: translateX(26px);
-        }
-        
-        .theme-icon {
-            margin-left: 10px;
-            font-size: 1.2rem;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Einbürgerungstest</h1>
-    
+    <div class="masthead">
+        <h1>Einbürgerungstest</h1>
+        <p class="subtitle" id="subtitleText">Fragenkatalog für Rheinland-Pfalz</p>
+    </div>
+
     <div class="controls-container">
         <div class="navigation-links">
             <a href="test-your-knowledge.html" class="nav-link">Test Your Knowledge</a>
+            <a href="test-your-knowledge.html?missed=1" id="reviewMissedLink" class="nav-link">Review Missed (<span id="missedCount">0</span>)</a>
         </div>
         <div class="right-controls">
+            <div class="field-group">
+                <span class="field-label">Bundesland</span>
+                <select id="stateSelect">
+                    <option value="">Kein Bundesland (alle Fragen)</option>
+                    <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+                    <option value="Berlin">Berlin</option>
+                </select>
+            </div>
+
+            <div class="field-group">
+                <span class="field-label">Fragen pro Seite</span>
+                <select id="pageSizeSelect">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="1000">Alle</option>
+                </select>
+            </div>
+
+            <div class="field-group">
+                <span class="field-label">Spalten</span>
+                <select id="columnsSelect">
+                    <option value="1">1 Spalte</option>
+                    <option value="2">2 Spalten</option>
+                </select>
+            </div>
+
             <button id="randomizeBtn">Randomize Questions</button>
-            
+
+            <div class="theme-switch-wrapper">
+                <span class="control-label">Study answers</span>
+                <label class="theme-switch">
+                    <input type="checkbox" id="studyModeToggle" aria-label="Show all answers">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
             <div class="theme-switch-wrapper">
                 <span class="theme-icon">☀️</span>
                 <label class="theme-switch">
@@ -397,12 +69,12 @@
             </div>
         </div>
     </div>
-    
+
     <div id="quizContainer" class="quiz-container">
         <div class="quiz-header">
-            <h2>Quiz</h2>
+            <h2>Fragenkatalog</h2>
             <div class="score-container">
-                Score: <span id="score">0</span> / <span id="totalQuestions">0</span>
+                <span id="score">0</span> / <span id="totalQuestions">0</span> richtig
             </div>
         </div>
         
@@ -423,12 +95,17 @@
         </div>
     </div>
     
+    <script src="study-mode.js"></script>
+    <script src="missed-questions.js"></script>
     <script>
         let questions = [];
         let currentPage = 1;
-        let questionsPerPage = 10;
+        let questionsPerPage = parseInt(localStorage.getItem('questionsPerPage'), 10) || 10;
+        let columnCount = parseInt(localStorage.getItem('columnCount'), 10) || 1;
         let score = 0;
         let answeredQuestions = {};
+        let isStudyModeEnabled = localStorage.getItem('studyMode') === 'enabled';
+        let revealedAnswerIndices = new Set();
         
         // DOM elements
         const quizContainer = document.getElementById('quizContainer');
@@ -442,22 +119,78 @@
         const jumpBtn = document.getElementById('jumpBtn');
         const randomizeBtn = document.getElementById('randomizeBtn');
         const themeToggle = document.getElementById('themeToggle');
-        
+        const studyModeToggle = document.getElementById('studyModeToggle');
+        const missedCountElement = document.getElementById('missedCount');
+        const stateSelect = document.getElementById('stateSelect');
+        const pageSizeSelect = document.getElementById('pageSizeSelect');
+        const columnsSelect = document.getElementById('columnsSelect');
+        const subtitleText = document.getElementById('subtitleText');
+
+        let allQuestions = [];
+        const storedState = localStorage.getItem('selectedState');
+        let selectedState = storedState !== null ? storedState : 'Rheinland-Pfalz';
+
+        function filterQuestionsByState(questionList, state) {
+            if (!state) {
+                return questionList;
+            }
+            return questionList.filter(question => !question.state || question.state === state);
+        }
+
+        function updateSubtitle() {
+            subtitleText.textContent = selectedState
+                ? `Fragenkatalog für ${selectedState}`
+                : 'Fragenkatalog, alle Bundesländer';
+        }
+
+        function applyColumnLayout() {
+            questionsContainer.classList.toggle('columns-2', columnCount === 2);
+            document.body.classList.toggle('wide', columnCount === 2);
+        }
+
         // Get saved page from localStorage (if exists)
         const savedPage = localStorage.getItem('currentPage');
-        
+
         // Event listeners
         prevBtn.addEventListener('click', goToPreviousPage);
         nextBtn.addEventListener('click', goToNextPage);
         jumpBtn.addEventListener('click', jumpToQuestionNumber);
         randomizeBtn.addEventListener('click', randomizeQuestions);
         themeToggle.addEventListener('change', toggleTheme);
+        studyModeToggle.addEventListener('change', toggleStudyMode);
+        stateSelect.addEventListener('change', (event) => {
+            selectedState = event.target.value;
+            localStorage.setItem('selectedState', selectedState);
+            questions = filterQuestionsByState(allQuestions, selectedState);
+            localStorage.setItem('currentPage', 1);
+            updateSubtitle();
+            initializeQuiz();
+        });
+        pageSizeSelect.addEventListener('change', (event) => {
+            questionsPerPage = parseInt(event.target.value, 10);
+            localStorage.setItem('questionsPerPage', questionsPerPage);
+            localStorage.setItem('currentPage', 1);
+            initializeQuiz();
+        });
+        columnsSelect.addEventListener('change', (event) => {
+            columnCount = parseInt(event.target.value, 10);
+            localStorage.setItem('columnCount', columnCount);
+            applyColumnLayout();
+        });
+
+        stateSelect.value = selectedState;
+        pageSizeSelect.value = String(questionsPerPage);
+        columnsSelect.value = String(columnCount);
+        applyColumnLayout();
+        updateSubtitle();
         
         // Check for saved theme preference
         if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
             themeToggle.checked = true;
         }
+
+        studyModeToggle.checked = isStudyModeEnabled;
         
         // Toggle theme function
         function toggleTheme(e) {
@@ -468,6 +201,56 @@
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
             }
+        }
+
+        function toggleStudyMode(event) {
+            isStudyModeEnabled = event.target.checked;
+            localStorage.setItem('studyMode', isStudyModeEnabled ? 'enabled' : 'disabled');
+            updateStudyAnswerHighlights();
+        }
+
+        function updateStudyAnswerHighlights() {
+            document.querySelectorAll('.options').forEach((optionsList) => {
+                const firstOption = optionsList.querySelector('.option');
+                if (!firstOption) {
+                    return;
+                }
+
+                const questionIndex = Number(firstOption.dataset.questionIndex);
+                StudyMode.applyStudyMode(
+                    optionsList.querySelectorAll('.option'),
+                    questions[questionIndex].correctAnswer,
+                    isAnswerVisible(questionIndex)
+                );
+            });
+
+            document.querySelectorAll('.answer-toggle').forEach((button) => {
+                button.disabled = isStudyModeEnabled;
+            });
+        }
+
+        function isAnswerVisible(questionIndex) {
+            return isStudyModeEnabled || revealedAnswerIndices.has(questionIndex);
+        }
+
+        function updateMissedCount() {
+            missedCountElement.textContent = MissedQuestions.getMissedQuestionCount();
+        }
+
+        function toggleAnswerReveal(event) {
+            const button = event.currentTarget;
+            const questionIndex = Number(button.dataset.questionIndex);
+
+            if (revealedAnswerIndices.has(questionIndex)) {
+                revealedAnswerIndices.delete(questionIndex);
+                button.textContent = 'Show Answer';
+            } else {
+                revealedAnswerIndices.add(questionIndex);
+                button.textContent = 'Hide Answer';
+            }
+
+            const options = document.querySelectorAll(`#question-${questionIndex} .option`);
+            StudyMode.applyStudyMode(options, questions[questionIndex].correctAnswer, isAnswerVisible(questionIndex));
         }
         
         // Randomize questions
@@ -487,8 +270,9 @@
                 currentPage = 1;
                 score = 0;
                 answeredQuestions = {};
+                revealedAnswerIndices = new Set();
                 scoreElement.textContent = score;
-                
+
                 // Update saved page in localStorage
                 localStorage.setItem('currentPage', 1);
                 
@@ -500,9 +284,9 @@
         }
         
         // Initialize quiz
-        function initializeQuiz() {
-            // Reset quiz state but use saved page if available
-            currentPage = savedPage ? parseInt(savedPage) : 1;
+        function initializeQuiz(restoreSavedPage = false) {
+            // Reset quiz state; only the very first load restores the last-viewed page
+            currentPage = (restoreSavedPage && savedPage) ? parseInt(savedPage) : 1;
             score = 0;
             answeredQuestions = {};
             
@@ -519,8 +303,10 @@
             
             // Update button states
             updateButtonStates();
+
+            updateMissedCount();
         }
-        
+
         // Create pagination
         function createPagination() {
             paginationContainer.innerHTML = '';
@@ -561,20 +347,29 @@
                 // Create question container
                 const questionContainer = document.createElement('div');
                 questionContainer.classList.add('question-container');
-                
-                // Create question number and text
+                questionContainer.id = `question-${i}`;
+
+                // Reference-number badge, like a field number on an official form
+                const questionIdBadge = document.createElement('div');
+                questionIdBadge.classList.add('question-id');
+                questionIdBadge.textContent = String(question.id).padStart(3, '0');
+                questionContainer.appendChild(questionIdBadge);
+
+                const questionBody = document.createElement('div');
+                questionBody.classList.add('question-body');
+
+                // Create question text
                 const questionElement = document.createElement('div');
                 questionElement.classList.add('question');
-                questionElement.textContent = `${question.id}. ${question.question}`;
-                
-                questionContainer.appendChild(questionElement);
-                
+                questionElement.textContent = question.question;
+
+                questionBody.appendChild(questionElement);
+
                 if (question.img) {
                     // Create question image
                     const questionImage = document.createElement('img');
                     questionImage.src = "imgs/" + question.img;
-                    questionImage.style.width = "100%";
-                    questionContainer.appendChild(questionImage);
+                    questionBody.appendChild(questionImage);
                 }
 
                 // Create translation toggle
@@ -583,42 +378,63 @@
                 translationToggle.textContent = 'Show Translation';
                 translationToggle.dataset.questionId = i;
                 translationToggle.addEventListener('click', toggleTranslation);
-                questionContainer.appendChild(translationToggle);
-                
+                questionBody.appendChild(translationToggle);
+
+                // Create answer toggle
+                const answerToggle = document.createElement('button');
+                answerToggle.classList.add('answer-toggle');
+                answerToggle.textContent = revealedAnswerIndices.has(i) ? 'Hide Answer' : 'Show Answer';
+                answerToggle.dataset.questionIndex = i;
+                answerToggle.disabled = isStudyModeEnabled;
+                answerToggle.addEventListener('click', toggleAnswerReveal);
+                questionBody.appendChild(answerToggle);
+
                 // Create question translation
                 const translationElement = document.createElement('div');
                 translationElement.classList.add('translation');
                 translationElement.id = `translation-${i}`;
                 translationElement.textContent = question.question_trans;
-                questionContainer.appendChild(translationElement);
-                
+                questionBody.appendChild(translationElement);
+
                 // Create options
                 const optionsList = document.createElement('ul');
                 optionsList.classList.add('options');
-                
+
                 question.options.forEach((option, optionIndex) => {
                     const optionItem = document.createElement('li');
                     optionItem.classList.add('option');
                     optionItem.dataset.questionIndex = i;
                     optionItem.dataset.optionIndex = optionIndex;
-                    
+
+                    // Ballot-style marker, filled in when this option is chosen
+                    const optionMarker = document.createElement('span');
+                    optionMarker.classList.add('option-marker');
+                    optionItem.appendChild(optionMarker);
+
+                    const optionMark = document.createElement('span');
+                    optionMark.classList.add('option-mark');
+
                     // Create option text container
                     const optionText = document.createElement('span');
                     optionText.textContent = option;
-                    optionItem.appendChild(optionText);
-                    
+                    optionMark.appendChild(optionText);
+
                     // Create option translation container
                     const optionTranslation = document.createElement('span');
                     optionTranslation.classList.add('option-translation');
                     optionTranslation.textContent = question.options_trans[optionIndex];
-                    optionItem.appendChild(optionTranslation);
-                    
+                    optionMark.appendChild(optionTranslation);
+
+                    optionItem.appendChild(optionMark);
+
                     optionItem.addEventListener('click', selectOption);
-                    
+
                     optionsList.appendChild(optionItem);
                 });
-                
-                questionContainer.appendChild(optionsList);
+
+                questionBody.appendChild(optionsList);
+                questionContainer.appendChild(questionBody);
+                StudyMode.applyStudyMode(optionsList.querySelectorAll('.option'), question.correctAnswer, isAnswerVisible(i));
                 questionsContainer.appendChild(questionContainer);
             }
         }
@@ -632,18 +448,20 @@
             
             // Mark question as answered
             answeredQuestions[questionIndex] = optionIndex;
-            
+
             // Add selected class
             optionItem.classList.add('selected');
-            
+
             // Check if answer is correct
-            if (optionIndex === question.correctAnswer-1) {
+            const isCorrect = optionIndex === question.correctAnswer - 1;
+
+            if (isCorrect) {
                 optionItem.classList.add('correct');
                 score++;
                 scoreElement.textContent = score;
             } else {
                 optionItem.classList.add('incorrect');
-                
+
                 // Highlight the correct answer
                 const optionsList = optionItem.parentElement;
                 const correctOption = optionsList.querySelector(`[data-option-index="${question.correctAnswer-1}"]`);
@@ -651,7 +469,10 @@
                     correctOption.classList.add('correct');
                 }
             }
-            
+
+            MissedQuestions.recordAnswer(question.id, isCorrect);
+            updateMissedCount();
+
             // Disable click events for all options in this question
             const allOptions = optionItem.parentElement.querySelectorAll('.option');
             allOptions.forEach(option => {
@@ -773,10 +594,11 @@
         // Load the quiz data on page load
         document.addEventListener('DOMContentLoaded', async function() {
             const data = await Quiz.loadQuestions();
-            questions = data.questions || [];
+            allQuestions = data.questions || [];
+            questions = filterQuestionsByState(allQuestions, selectedState);
             if (questions.length > 0) {
-                initializeQuiz();
-                
+                initializeQuiz(true);
+
                 // Make sure the saved page is valid (not greater than the total number of pages)
                 const totalPages = Math.ceil(questions.length / questionsPerPage);
                 if (currentPage > totalPages) {
