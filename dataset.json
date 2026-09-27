@@ -5623,8 +5623,8 @@
     },
     {
       "id": 332,
-      "question": "Für wie viele Jahre wird das Landesparlament in Rheinland-Pfalz gewählt?",
-      "question_trans": "For how many years is the state parliament of Rhineland-Palatinate elected?",
+      "question": "Für wie viele Jahre wird der Landtag in Rheinland-Pfalz gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Rheinland-Pfalz elected?",
       "options": [
         "3",
         "4",
@@ -5664,18 +5664,18 @@
       "question": "Welche Farben hat die Landesflagge von Rheinland-Pfalz?",
       "question_trans": "What colors does the state flag of Rhineland-Palatinate have?",
       "options": [
+        "weiß-rot",
         "schwarz-rot-gold",
-        "blau-weiß-rot",
-        "grün-weiß-rot",
-        "weiß-rot"
+        "schwarz-gelb",
+        "grün-weiß-rot"
       ],
       "options_trans": [
+        "white-red",
         "black-red-gold",
-        "blue-white-red",
-        "green-white-red",
-        "white-red"
+        "black-yellow",
+        "green-white-red"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 2,
       "state": "Rheinland-Pfalz"
     },
     {
@@ -5683,15 +5683,15 @@
       "question": "Wo können Sie sich in Rheinland-Pfalz über politische Themen informieren?",
       "question_trans": "Where can you find out about political issues in Rhineland-Palatinate?",
       "options": [
-        "beim Ordnungsamt der Gemeinde",
         "bei den Kirchen",
         "bei der Verbraucherzentrale",
+        "beim Ordnungsamt der Gemeinde",
         "bei der Landeszentrale für politische Bildung"
       ],
       "options_trans": [
-        "at the public order office of the municipality",
         "at the churches",
         "at the consumer advice center",
+        "at the public order office of the municipality",
         "at the State Center for Political Education"
       ],
       "correctAnswer": 4,
@@ -5699,40 +5699,40 @@
     },
     {
       "id": 336,
-      "question": "Wie heißt die Landeshauptstadt von Rheinland-Pfalz?",
-      "question_trans": "What is the state capital of Rhineland-Palatinate?",
+      "question": "Die Landeshauptstadt von Rheinland-Pfalz heißt …",
+      "question_trans": "The state capital of Rheinland-Pfalz is …",
       "options": [
-        "Mainz",
-        "Kaiserslautern",
-        "Ludwigshafen",
-        "Koblenz"
+        "Mainz.",
+        "Kaiserslautern.",
+        "Ludwigshafen.",
+        "Koblenz."
       ],
       "options_trans": [
-        "Mainz",
-        "Kaiserslautern",
-        "Ludwigshafen",
-        "Koblenz"
+        "Mainz.",
+        "Kaiserslautern.",
+        "Ludwigshafen.",
+        "Koblenz."
       ],
       "correctAnswer": 1,
       "state": "Rheinland-Pfalz"
     },
     {
       "id": 337,
-      "question": "Wie nennt man die Regierungschefin/den Regierungschef von Rheinland-Pfalz?",
-      "question_trans": "What is the head of government of Rhineland-Palatinate called?",
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Rheinland-Pfalz?",
+      "question_trans": "What is the head of government of Rheinland-Pfalz called?",
       "options": [
-        "Ministerpräsidentin/Ministerpräsident",
-        "Oberbürgermeisterin/Oberbürgermeister",
-        "Präsidentin/Präsident des Senates",
-        "Regierende Bürgermeisterin/Regierender Bürgermeister"
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
       ],
       "options_trans": [
-        "Minister-President",
-        "Lord Mayor",
-        "President of the Senate",
-        "Governing Mayor"
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 4,
       "state": "Rheinland-Pfalz"
     },
     {
@@ -5740,18 +5740,18 @@
       "question": "Welche Ministerin/welchen Minister hat Rheinland-Pfalz nicht?",
       "question_trans": "Which minister does Rhineland-Palatinate not have?",
       "options": [
-        "Finanzministerin/Finanzminister",
-        "Innenministerin/Innenminister",
+        "Justizministerin/Justizminister",
         "Außenministerin/Außenminister",
-        "Justizministerin/Justizminister"
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
       ],
       "options_trans": [
-        "Minister of Finance",
-        "Minister of the Interior",
+        "Minister of Justice",
         "Minister of Foreign Affairs",
-        "Minister of Justice"
+        "Minister of Finance",
+        "Minister of the Interior"
       ],
-      "correctAnswer": 3,
+      "correctAnswer": 2,
       "state": "Rheinland-Pfalz"
     },
     {
@@ -5793,6 +5793,2694 @@
       ],
       "correctAnswer": 2,
       "state": "Rheinland-Pfalz"
+    },
+    {
+      "id": 341,
+      "question": "Welches Wappen gehört zum Bundesland Baden-Württemberg?",
+      "question_trans": "Which coat of arms belongs to Baden-Württemberg?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 1,
+      "state": "Baden-Württemberg",
+      "img": "341.png"
+    },
+    {
+      "id": 342,
+      "question": "Welches ist ein Landkreis in Baden-Württemberg?",
+      "question_trans": "Which is a district (Landkreis) in Baden-Württemberg?",
+      "options": [
+        "Neckar-Odenwald-Kreis",
+        "Mecklenburgische Seenplatte",
+        "Nordfriesland",
+        "Altötting"
+      ],
+      "options_trans": [
+        "Neckar-Odenwald-Kreis",
+        "Mecklenburgische Seenplatte",
+        "Nordfriesland",
+        "Altötting"
+      ],
+      "correctAnswer": 1,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 343,
+      "question": "Für wie viele Jahre wird der Landtag in Baden-Württemberg gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Baden-Württemberg elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 344,
+      "question": "Ab welchem Alter darf man in Baden-Württemberg bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Baden-Württemberg?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 345,
+      "question": "Welche Farben hat die Landesflagge von Baden-Württemberg?",
+      "question_trans": "What colors does the state flag of Baden-Württemberg have?",
+      "options": [
+        "schwarz-gold",
+        "blau-weiß-rot",
+        "weiß-blau",
+        "grün-weiß-rot"
+      ],
+      "options_trans": [
+        "black-gold",
+        "blue-white-red",
+        "white-blue",
+        "green-white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 346,
+      "question": "Wo können Sie sich in Baden-Württemberg über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Baden-Württemberg?",
+      "options": [
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Verbraucherzentrale",
+        "bei der Landeszentrale für politische Bildung",
+        "bei den Kirchen"
+      ],
+      "options_trans": [
+        "at the public order office of the municipality",
+        "at the consumer advice center",
+        "at the State Center for Political Education",
+        "at the churches"
+      ],
+      "correctAnswer": 3,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 347,
+      "question": "Die Landeshauptstadt von Baden-Württemberg heißt …",
+      "question_trans": "The state capital of Baden-Württemberg is …",
+      "options": [
+        "Stuttgart.",
+        "Heidelberg.",
+        "Karlsruhe.",
+        "Mannheim."
+      ],
+      "options_trans": [
+        "Stuttgart.",
+        "Heidelberg.",
+        "Karlsruhe.",
+        "Mannheim."
+      ],
+      "correctAnswer": 1,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 348,
+      "question": "Welches Bundesland ist Baden-Württemberg?",
+      "question_trans": "Which federal state is Baden-Württemberg?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1,
+      "state": "Baden-Württemberg",
+      "img": "348.png"
+    },
+    {
+      "id": 349,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Baden-Württemberg?",
+      "question_trans": "What is the head of government of Baden-Württemberg called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 350,
+      "question": "Welche Ministerin/welchen Minister hat Baden-Württemberg nicht?",
+      "question_trans": "Which minister does Baden-Württemberg not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Baden-Württemberg"
+    },
+    {
+      "id": 351,
+      "question": "Welches Wappen gehört zum Freistaat Bayern?",
+      "question_trans": "Which coat of arms belongs to Bayern?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 2,
+      "state": "Bayern",
+      "img": "351.png"
+    },
+    {
+      "id": 352,
+      "question": "Welches ist ein Landkreis in Bayern?",
+      "question_trans": "Which is a district (Landkreis) in Bayern?",
+      "options": [
+        "Altötting",
+        "Prignitz",
+        "Rhein-Sieg-Kreis",
+        "Nordfriesland"
+      ],
+      "options_trans": [
+        "Altötting",
+        "Prignitz",
+        "Rhein-Sieg-Kreis",
+        "Nordfriesland"
+      ],
+      "correctAnswer": 1,
+      "state": "Bayern"
+    },
+    {
+      "id": 353,
+      "question": "Für wie viele Jahre wird der Landtag in Bayern gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Bayern elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Bayern"
+    },
+    {
+      "id": 354,
+      "question": "Ab welchem Alter darf man in Bayern bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Bayern?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 3,
+      "state": "Bayern"
+    },
+    {
+      "id": 355,
+      "question": "Welche Farben hat die Landesflagge von Bayern?",
+      "question_trans": "What colors does the state flag of Bayern have?",
+      "options": [
+        "weiß-blau",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "schwarz-gelb"
+      ],
+      "options_trans": [
+        "white-blue",
+        "blue-white-red",
+        "green-white-red",
+        "black-yellow"
+      ],
+      "correctAnswer": 1,
+      "state": "Bayern"
+    },
+    {
+      "id": 356,
+      "question": "Wo können Sie sich in Bayern über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Bayern?",
+      "options": [
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Landeszentrale für politische Bildung",
+        "bei der Verbraucherzentrale",
+        "bei den Kirchen"
+      ],
+      "options_trans": [
+        "at the public order office of the municipality",
+        "at the State Center for Political Education",
+        "at the consumer advice center",
+        "at the churches"
+      ],
+      "correctAnswer": 2,
+      "state": "Bayern"
+    },
+    {
+      "id": 357,
+      "question": "Die Landeshauptstadt von Bayern heißt …",
+      "question_trans": "The state capital of Bayern is …",
+      "options": [
+        "München.",
+        "Ingolstadt.",
+        "Regensburg.",
+        "Nürnberg."
+      ],
+      "options_trans": [
+        "München.",
+        "Ingolstadt.",
+        "Regensburg.",
+        "Nürnberg."
+      ],
+      "correctAnswer": 1,
+      "state": "Bayern"
+    },
+    {
+      "id": 358,
+      "question": "Welches Bundesland ist Bayern?",
+      "question_trans": "Which federal state is Bayern?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "state": "Bayern",
+      "img": "358.png"
+    },
+    {
+      "id": 359,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Bayern?",
+      "question_trans": "What is the head of government of Bayern called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Bayern"
+    },
+    {
+      "id": 360,
+      "question": "Welche Ministerin/welchen Minister hat Bayern nicht?",
+      "question_trans": "Which minister does Bayern not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Bayern"
+    },
+    {
+      "id": 361,
+      "question": "Welches Wappen gehört zum Bundesland Brandenburg?",
+      "question_trans": "Which coat of arms belongs to Brandenburg?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 3,
+      "state": "Brandenburg",
+      "img": "361.png"
+    },
+    {
+      "id": 362,
+      "question": "Welches ist ein Landkreis in Brandenburg?",
+      "question_trans": "Which is a district (Landkreis) in Brandenburg?",
+      "options": [
+        "Prignitz",
+        "Rhein-Sieg-Kreis",
+        "Vogtlandkreis",
+        "Amberg-Sulzbach"
+      ],
+      "options_trans": [
+        "Prignitz",
+        "Rhein-Sieg-Kreis",
+        "Vogtlandkreis",
+        "Amberg-Sulzbach"
+      ],
+      "correctAnswer": 1,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 363,
+      "question": "Für wie viele Jahre wird der Landtag in Brandenburg gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Brandenburg elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 364,
+      "question": "Ab welchem Alter darf man in Brandenburg bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Brandenburg?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 365,
+      "question": "Welche Farben hat die Landesflagge von Brandenburg?",
+      "question_trans": "What colors does the state flag of Brandenburg have?",
+      "options": [
+        "rot-weiß",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "schwarz-gelb"
+      ],
+      "options_trans": [
+        "red-white",
+        "blue-white-red",
+        "green-white-red",
+        "black-yellow"
+      ],
+      "correctAnswer": 1,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 366,
+      "question": "Wo können Sie sich in Brandenburg über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Brandenburg?",
+      "options": [
+        "bei den Kirchen",
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Landeszentrale für politische Bildung",
+        "bei der Verbraucherzentrale"
+      ],
+      "options_trans": [
+        "at the churches",
+        "at the public order office of the municipality",
+        "at the State Center for Political Education",
+        "at the consumer advice center"
+      ],
+      "correctAnswer": 3,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 367,
+      "question": "Die Landeshauptstadt von Brandenburg heißt …",
+      "question_trans": "The state capital of Brandenburg is …",
+      "options": [
+        "Potsdam.",
+        "Cottbus.",
+        "Brandenburg.",
+        "Frankfurt/Oder."
+      ],
+      "options_trans": [
+        "Potsdam.",
+        "Cottbus.",
+        "Brandenburg.",
+        "Frankfurt/Oder."
+      ],
+      "correctAnswer": 1,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 368,
+      "question": "Welches Bundesland ist Brandenburg?",
+      "question_trans": "Which federal state is Brandenburg?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 3,
+      "state": "Brandenburg",
+      "img": "368.png"
+    },
+    {
+      "id": 369,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Brandenburg?",
+      "question_trans": "What is the head of government of Brandenburg called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 370,
+      "question": "Welche Ministerin/welchen Minister hat Brandenburg nicht?",
+      "question_trans": "Which minister does Brandenburg not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Brandenburg"
+    },
+    {
+      "id": 371,
+      "question": "Welches Wappen gehört zur Freien Hansestadt Bremen?",
+      "question_trans": "Which coat of arms belongs to Bremen?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 4,
+      "state": "Bremen",
+      "img": "371.png"
+    },
+    {
+      "id": 372,
+      "question": "Welches ist ein Stadtteil von Bremen?",
+      "question_trans": "Which is a district (Stadtteil) of Bremen?",
+      "options": [
+        "Hemelingen",
+        "Altona",
+        "Pankow",
+        "Babelsberg"
+      ],
+      "options_trans": [
+        "Hemelingen",
+        "Altona",
+        "Pankow",
+        "Babelsberg"
+      ],
+      "correctAnswer": 1,
+      "state": "Bremen"
+    },
+    {
+      "id": 373,
+      "question": "Für wie viele Jahre wird das Landesparlament in Bremen gewählt?",
+      "question_trans": "For how many years is the state parliament in Bremen elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 2,
+      "state": "Bremen"
+    },
+    {
+      "id": 374,
+      "question": "Ab welchem Alter darf man in Bremen bei den Wahlen zur Bürgerschaft (Landtag) wählen?",
+      "question_trans": "From what age can you vote in the Bürgerschaft (state parliament) elections in Bremen?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Bremen"
+    },
+    {
+      "id": 375,
+      "question": "Welche Farben hat die Landesflagge von Bremen?",
+      "question_trans": "What colors does the state flag of Bremen have?",
+      "options": [
+        "rot-weiß",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "schwarz-gold"
+      ],
+      "options_trans": [
+        "red-white",
+        "blue-white-red",
+        "green-white-red",
+        "black-gold"
+      ],
+      "correctAnswer": 1,
+      "state": "Bremen"
+    },
+    {
+      "id": 376,
+      "question": "Wo können Sie sich in Bremen über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Bremen?",
+      "options": [
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Landeszentrale für politische Bildung",
+        "bei den Kirchen",
+        "bei der Verbraucherzentrale"
+      ],
+      "options_trans": [
+        "at the public order office of the municipality",
+        "at the State Center for Political Education",
+        "at the churches",
+        "at the consumer advice center"
+      ],
+      "correctAnswer": 2,
+      "state": "Bremen"
+    },
+    {
+      "id": 377,
+      "question": "Was ist ein deutscher Stadtstaat?",
+      "question_trans": "What is a German city-state?",
+      "options": [
+        "Bremen",
+        "München",
+        "Frankfurt",
+        "Erfurt"
+      ],
+      "options_trans": [
+        "Bremen",
+        "München",
+        "Frankfurt",
+        "Erfurt"
+      ],
+      "correctAnswer": 1,
+      "state": "Bremen"
+    },
+    {
+      "id": 378,
+      "question": "Welches Bundesland ist Bremen?",
+      "question_trans": "Which federal state is Bremen?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 4,
+      "state": "Bremen",
+      "img": "378.png"
+    },
+    {
+      "id": 379,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef des Stadtstaates Bremen?",
+      "question_trans": "What is the head of government of the city-state of Bremen called?",
+      "options": [
+        "Präsidentin/Präsident des Senates",
+        "Ministerpräsidentin/Ministerpräsident",
+        "Erste Bürgermeisterin/Erster Bürgermeister",
+        "Regierende Bürgermeisterin/Regierender Bürgermeister"
+      ],
+      "options_trans": [
+        "President of the Senate",
+        "Minister-President",
+        "First Mayor",
+        "Governing Mayor"
+      ],
+      "correctAnswer": 1,
+      "state": "Bremen"
+    },
+    {
+      "id": 380,
+      "question": "Welche Senatorin/welchen Senator hat Bremen nicht?",
+      "question_trans": "Which senator does Bremen not have?",
+      "options": [
+        "Senatorin/Senator für Außenbeziehungen",
+        "Finanzsenatorin/Finanzsenator",
+        "Justizsenatorin/Justizsenator",
+        "Innensenatorin/Innensenator"
+      ],
+      "options_trans": [
+        "Senator for External Relations",
+        "Senator for Finance",
+        "Senator for Justice",
+        "Senator for the Interior"
+      ],
+      "correctAnswer": 1,
+      "state": "Bremen"
+    },
+    {
+      "id": 381,
+      "question": "Welches Wappen gehört zur Freien und Hansestadt Hamburg?",
+      "question_trans": "Which coat of arms belongs to Hamburg?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg",
+      "img": "381.png"
+    },
+    {
+      "id": 382,
+      "question": "Welches ist ein Bezirk von Hamburg?",
+      "question_trans": "Which is a district (Bezirk) of Hamburg?",
+      "options": [
+        "Altona",
+        "Hemelingen",
+        "Pankow",
+        "Mecklenburgische Seenplatte"
+      ],
+      "options_trans": [
+        "Altona",
+        "Hemelingen",
+        "Pankow",
+        "Mecklenburgische Seenplatte"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg"
+    },
+    {
+      "id": 383,
+      "question": "Für wie viele Jahre wird das Landesparlament in Hamburg gewählt?",
+      "question_trans": "For how many years is the state parliament in Hamburg elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Hamburg"
+    },
+    {
+      "id": 384,
+      "question": "Ab welchem Alter darf man in Hamburg bei Kommunalwahlen (Wahl der Bezirksversammlungen) wählen?",
+      "question_trans": "From what age can you vote in local elections in Hamburg (district assembly elections)?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Hamburg"
+    },
+    {
+      "id": 385,
+      "question": "Welche Farben hat die Landesflagge von Hamburg?",
+      "question_trans": "What colors does the state flag of Hamburg have?",
+      "options": [
+        "weiß-rot",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "schwarz-gelb"
+      ],
+      "options_trans": [
+        "white-red",
+        "blue-white-red",
+        "green-white-red",
+        "black-yellow"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg"
+    },
+    {
+      "id": 386,
+      "question": "Wo können Sie sich in Hamburg über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Hamburg?",
+      "options": [
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Verbraucherzentrale",
+        "bei den Kirchen",
+        "bei der Landeszentrale für politische Bildung"
+      ],
+      "options_trans": [
+        "at the public order office of the municipality",
+        "at the consumer advice center",
+        "at the churches",
+        "at the State Center for Political Education"
+      ],
+      "correctAnswer": 4,
+      "state": "Hamburg"
+    },
+    {
+      "id": 387,
+      "question": "Welches Bundesland ist ein Stadtstaat?",
+      "question_trans": "Which federal state is a city-state?",
+      "options": [
+        "Hamburg",
+        "Sachsen",
+        "Bayern",
+        "Thüringen"
+      ],
+      "options_trans": [
+        "Hamburg",
+        "Sachsen",
+        "Bayern",
+        "Thüringen"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg"
+    },
+    {
+      "id": 388,
+      "question": "Welches Bundesland ist Hamburg?",
+      "question_trans": "Which federal state is Hamburg?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg",
+      "img": "388.png"
+    },
+    {
+      "id": 389,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef des Stadtstaates Hamburg?",
+      "question_trans": "What is the head of government of the city-state of Hamburg called?",
+      "options": [
+        "Erste Bürgermeisterin/Erster Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident",
+        "Regierende Senatorin/Regierender Senator",
+        "Oberbürgermeisterin/Oberbürgermeister"
+      ],
+      "options_trans": [
+        "First Mayor",
+        "Minister-President",
+        "Governing Senator",
+        "Lord Mayor"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg"
+    },
+    {
+      "id": 390,
+      "question": "Welche Senatorin/welchen Senator hat Hamburg nicht?",
+      "question_trans": "Which senator does Hamburg not have?",
+      "options": [
+        "Senatorin/Senator für Außenbeziehungen",
+        "Justizsenatorin/Justizsenator",
+        "Finanzsenatorin/Finanzsenator",
+        "Innensenatorin/Innensenator"
+      ],
+      "options_trans": [
+        "Senator for External Relations",
+        "Senator for Justice",
+        "Senator for Finance",
+        "Senator for the Interior"
+      ],
+      "correctAnswer": 1,
+      "state": "Hamburg"
+    },
+    {
+      "id": 391,
+      "question": "Welches Wappen gehört zum Bundesland Hessen?",
+      "question_trans": "Which coat of arms belongs to Hessen?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 2,
+      "state": "Hessen",
+      "img": "391.png"
+    },
+    {
+      "id": 392,
+      "question": "Welches ist ein Landkreis in Hessen?",
+      "question_trans": "Which is a district (Landkreis) in Hessen?",
+      "options": [
+        "Main-Taunus-Kreis",
+        "Ammerland",
+        "Altötting",
+        "Prignitz"
+      ],
+      "options_trans": [
+        "Main-Taunus-Kreis",
+        "Ammerland",
+        "Altötting",
+        "Prignitz"
+      ],
+      "correctAnswer": 1,
+      "state": "Hessen"
+    },
+    {
+      "id": 393,
+      "question": "Für wie viele Jahre wird der Landtag in Hessen gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Hessen elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Hessen"
+    },
+    {
+      "id": 394,
+      "question": "Ab welchem Alter darf man in Hessen bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Hessen?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 3,
+      "state": "Hessen"
+    },
+    {
+      "id": 395,
+      "question": "Welche Farben hat die Landesflagge von Hessen?",
+      "question_trans": "What colors does the state flag of Hessen have?",
+      "options": [
+        "rot-weiß",
+        "blau-weiß-rot",
+        "schwarz-gold",
+        "grün-weiß-rot"
+      ],
+      "options_trans": [
+        "red-white",
+        "blue-white-red",
+        "black-gold",
+        "green-white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Hessen"
+    },
+    {
+      "id": 396,
+      "question": "Wo können Sie sich in Hessen über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Hessen?",
+      "options": [
+        "bei der Landeszentrale für politische Bildung",
+        "bei der Verbraucherzentrale",
+        "beim Ordnungsamt der Gemeinde",
+        "bei den Kirchen"
+      ],
+      "options_trans": [
+        "at the State Center for Political Education",
+        "at the consumer advice center",
+        "at the public order office of the municipality",
+        "at the churches"
+      ],
+      "correctAnswer": 1,
+      "state": "Hessen"
+    },
+    {
+      "id": 397,
+      "question": "Die Landeshauptstadt von Hessen heißt …",
+      "question_trans": "The state capital of Hessen is …",
+      "options": [
+        "Wiesbaden.",
+        "Kassel.",
+        "Darmstadt.",
+        "Frankfurt."
+      ],
+      "options_trans": [
+        "Wiesbaden.",
+        "Kassel.",
+        "Darmstadt.",
+        "Frankfurt."
+      ],
+      "correctAnswer": 1,
+      "state": "Hessen"
+    },
+    {
+      "id": 398,
+      "question": "Welches Bundesland ist Hessen?",
+      "question_trans": "Which federal state is Hessen?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "state": "Hessen",
+      "img": "398.png"
+    },
+    {
+      "id": 399,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Hessen?",
+      "question_trans": "What is the head of government of Hessen called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Hessen"
+    },
+    {
+      "id": 400,
+      "question": "Welche Ministerin/welchen Minister hat Hessen nicht?",
+      "question_trans": "Which minister does Hessen not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Hessen"
+    },
+    {
+      "id": 401,
+      "question": "Welches Wappen gehört zum Bundesland Mecklenburg-Vorpommern?",
+      "question_trans": "Which coat of arms belongs to Mecklenburg-Vorpommern?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 3,
+      "state": "Mecklenburg-Vorpommern",
+      "img": "401.png"
+    },
+    {
+      "id": 402,
+      "question": "Welches ist ein Landkreis in Mecklenburg-Vorpommern?",
+      "question_trans": "Which is a district (Landkreis) in Mecklenburg-Vorpommern?",
+      "options": [
+        "Mecklenburgische Seenplatte",
+        "Prignitz",
+        "Vogtlandkreis",
+        "Rhein-Sieg-Kreis"
+      ],
+      "options_trans": [
+        "Mecklenburgische Seenplatte",
+        "Prignitz",
+        "Vogtlandkreis",
+        "Rhein-Sieg-Kreis"
+      ],
+      "correctAnswer": 1,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 403,
+      "question": "Für wie viele Jahre wird der Landtag in Mecklenburg-Vorpommern gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Mecklenburg-Vorpommern elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 404,
+      "question": "Ab welchem Alter darf man in Mecklenburg-Vorpommern bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Mecklenburg-Vorpommern?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 405,
+      "question": "Welche Farben hat die Landesflagge von Mecklenburg-Vorpommern?",
+      "question_trans": "What colors does the state flag of Mecklenburg-Vorpommern have?",
+      "options": [
+        "blau-weiß-gelb-rot",
+        "schwarz-rot-gold",
+        "grün-weiß-rot",
+        "schwarz-gelb"
+      ],
+      "options_trans": [
+        "blue-white-yellow-red",
+        "black-red-gold",
+        "green-white-red",
+        "black-yellow"
+      ],
+      "correctAnswer": 1,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 406,
+      "question": "Wo können Sie sich in Mecklenburg-Vorpommern über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Mecklenburg-Vorpommern?",
+      "options": [
+        "bei der Landeszentrale für politische Bildung",
+        "bei den Kirchen",
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Verbraucherzentrale"
+      ],
+      "options_trans": [
+        "at the State Center for Political Education",
+        "at the churches",
+        "at the public order office of the municipality",
+        "at the consumer advice center"
+      ],
+      "correctAnswer": 1,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 407,
+      "question": "Die Landeshauptstadt von Mecklenburg-Vorpommern heißt …",
+      "question_trans": "The state capital of Mecklenburg-Vorpommern is …",
+      "options": [
+        "Schwerin.",
+        "Greifswald.",
+        "Rostock.",
+        "Wismar."
+      ],
+      "options_trans": [
+        "Schwerin.",
+        "Greifswald.",
+        "Rostock.",
+        "Wismar."
+      ],
+      "correctAnswer": 1,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 408,
+      "question": "Welches Bundesland ist Mecklenburg-Vorpommern?",
+      "question_trans": "Which federal state is Mecklenburg-Vorpommern?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 3,
+      "state": "Mecklenburg-Vorpommern",
+      "img": "408.png"
+    },
+    {
+      "id": 409,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Mecklenburg-Vorpommern?",
+      "question_trans": "What is the head of government of Mecklenburg-Vorpommern called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 410,
+      "question": "Welche Ministerin/welchen Minister hat Mecklenburg-Vorpommern nicht?",
+      "question_trans": "Which minister does Mecklenburg-Vorpommern not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Mecklenburg-Vorpommern"
+    },
+    {
+      "id": 411,
+      "question": "Welches Wappen gehört zum Bundesland Niedersachsen?",
+      "question_trans": "Which coat of arms belongs to Niedersachsen?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 4,
+      "state": "Niedersachsen",
+      "img": "411.png"
+    },
+    {
+      "id": 412,
+      "question": "Welches ist ein Landkreis in Niedersachsen?",
+      "question_trans": "Which is a district (Landkreis) in Niedersachsen?",
+      "options": [
+        "Ammerland",
+        "Rhein-Sieg-Kreis",
+        "Nordfriesland",
+        "Vogtlandkreis"
+      ],
+      "options_trans": [
+        "Ammerland",
+        "Rhein-Sieg-Kreis",
+        "Nordfriesland",
+        "Vogtlandkreis"
+      ],
+      "correctAnswer": 1,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 413,
+      "question": "Für wie viele Jahre wird der Landtag in Niedersachsen gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Niedersachsen elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 414,
+      "question": "Ab welchem Alter darf man in Niedersachsen bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Niedersachsen?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 415,
+      "question": "Welche Farben hat die Landesflagge von Niedersachsen?",
+      "question_trans": "What colors does the state flag of Niedersachsen have?",
+      "options": [
+        "schwarz-rot-gold",
+        "weiß-blau",
+        "schwarz-gelb",
+        "blau-weiß-rot"
+      ],
+      "options_trans": [
+        "black-red-gold",
+        "white-blue",
+        "black-yellow",
+        "blue-white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 416,
+      "question": "Wo können Sie sich in Niedersachsen über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Niedersachsen?",
+      "options": [
+        "bei der Landeszentrale für politische Bildung",
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Verbraucherzentrale",
+        "bei den Kirchen"
+      ],
+      "options_trans": [
+        "at the State Center for Political Education",
+        "at the public order office of the municipality",
+        "at the consumer advice center",
+        "at the churches"
+      ],
+      "correctAnswer": 1,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 417,
+      "question": "Die Landeshauptstadt von Niedersachsen heißt …",
+      "question_trans": "The state capital of Niedersachsen is …",
+      "options": [
+        "Hannover.",
+        "Braunschweig.",
+        "Wolfsburg.",
+        "Osnabrück."
+      ],
+      "options_trans": [
+        "Hannover.",
+        "Braunschweig.",
+        "Wolfsburg.",
+        "Osnabrück."
+      ],
+      "correctAnswer": 1,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 418,
+      "question": "Welches Bundesland ist Niedersachsen?",
+      "question_trans": "Which federal state is Niedersachsen?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 4,
+      "state": "Niedersachsen",
+      "img": "418.png"
+    },
+    {
+      "id": 419,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Niedersachsen?",
+      "question_trans": "What is the head of government of Niedersachsen called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 420,
+      "question": "Welche Ministerin/welchen Minister hat Niedersachsen nicht?",
+      "question_trans": "Which minister does Niedersachsen not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Niedersachsen"
+    },
+    {
+      "id": 421,
+      "question": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen?",
+      "question_trans": "Which coat of arms belongs to Nordrhein-Westfalen?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 1,
+      "state": "Nordrhein-Westfalen",
+      "img": "421.png"
+    },
+    {
+      "id": 422,
+      "question": "Welches ist ein Landkreis in Nordrhein-Westfalen?",
+      "question_trans": "Which is a district (Landkreis) in Nordrhein-Westfalen?",
+      "options": [
+        "Rhein-Sieg-Kreis",
+        "Ammerland",
+        "Nordfriesland",
+        "Vogtlandkreis"
+      ],
+      "options_trans": [
+        "Rhein-Sieg-Kreis",
+        "Ammerland",
+        "Nordfriesland",
+        "Vogtlandkreis"
+      ],
+      "correctAnswer": 1,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 423,
+      "question": "Für wie viele Jahre wird der Landtag in Nordrhein-Westfalen gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Nordrhein-Westfalen elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 424,
+      "question": "Ab welchem Alter darf man in Nordrhein-Westfalen bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Nordrhein-Westfalen?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 425,
+      "question": "Welche Farben hat die Landesflagge von Nordrhein-Westfalen?",
+      "question_trans": "What colors does the state flag of Nordrhein-Westfalen have?",
+      "options": [
+        "grün-weiß-rot",
+        "rot-weiß",
+        "schwarz-gold",
+        "blau-weiß-rot"
+      ],
+      "options_trans": [
+        "green-white-red",
+        "red-white",
+        "black-gold",
+        "blue-white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 426,
+      "question": "Wo können Sie sich in Nordrhein-Westfalen über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Nordrhein-Westfalen?",
+      "options": [
+        "bei den Kirchen",
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Verbraucherzentrale",
+        "bei der Landeszentrale für politische Bildung"
+      ],
+      "options_trans": [
+        "at the churches",
+        "at the public order office of the municipality",
+        "at the consumer advice center",
+        "at the State Center for Political Education"
+      ],
+      "correctAnswer": 4,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 427,
+      "question": "Die Landeshauptstadt von Nordrhein-Westfalen heißt …",
+      "question_trans": "The state capital of Nordrhein-Westfalen is …",
+      "options": [
+        "Düsseldorf.",
+        "Köln.",
+        "Bonn.",
+        "Dortmund."
+      ],
+      "options_trans": [
+        "Düsseldorf.",
+        "Köln.",
+        "Bonn.",
+        "Dortmund."
+      ],
+      "correctAnswer": 1,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 428,
+      "question": "Welches Bundesland ist Nordrhein-Westfalen?",
+      "question_trans": "Which federal state is Nordrhein-Westfalen?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1,
+      "state": "Nordrhein-Westfalen",
+      "img": "428.png"
+    },
+    {
+      "id": 429,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Nordrhein-Westfalen?",
+      "question_trans": "What is the head of government of Nordrhein-Westfalen called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 430,
+      "question": "Welche Ministerin/welchen Minister hat Nordrhein-Westfalen nicht?",
+      "question_trans": "Which minister does Nordrhein-Westfalen not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Nordrhein-Westfalen"
+    },
+    {
+      "id": 431,
+      "question": "Welches Wappen gehört zum Bundesland Saarland?",
+      "question_trans": "Which coat of arms belongs to Saarland?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 2,
+      "state": "Saarland",
+      "img": "431.png"
+    },
+    {
+      "id": 432,
+      "question": "Welches ist ein Landkreis im Saarland?",
+      "question_trans": "Which is a district (Landkreis) in Saarland?",
+      "options": [
+        "Neunkirchen",
+        "Mecklenburgische Seenplatte",
+        "Altötting",
+        "Rhein-Sieg-Kreis"
+      ],
+      "options_trans": [
+        "Neunkirchen",
+        "Mecklenburgische Seenplatte",
+        "Altötting",
+        "Rhein-Sieg-Kreis"
+      ],
+      "correctAnswer": 1,
+      "state": "Saarland"
+    },
+    {
+      "id": 433,
+      "question": "Für wie viele Jahre wird der Landtag des Saarlandes gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Saarland elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Saarland"
+    },
+    {
+      "id": 434,
+      "question": "Ab welchem Alter darf man im Saarland bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Saarland?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 3,
+      "state": "Saarland"
+    },
+    {
+      "id": 435,
+      "question": "Welche Farben hat die Landesflagge des Saarlandes?",
+      "question_trans": "What colors does the state flag of Saarland have?",
+      "options": [
+        "schwarz-rot-gold",
+        "weiß-blau",
+        "schwarz-gelb",
+        "grün-weiß-rot"
+      ],
+      "options_trans": [
+        "black-red-gold",
+        "white-blue",
+        "black-yellow",
+        "green-white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Saarland"
+    },
+    {
+      "id": 436,
+      "question": "Wo können Sie sich im Saarland über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Saarland?",
+      "options": [
+        "bei den Kirchen",
+        "bei der Landeszentrale für politische Bildung",
+        "bei der Verbraucherzentrale",
+        "beim Ordnungsamt der Gemeinde"
+      ],
+      "options_trans": [
+        "at the churches",
+        "at the State Center for Political Education",
+        "at the consumer advice center",
+        "at the public order office of the municipality"
+      ],
+      "correctAnswer": 2,
+      "state": "Saarland"
+    },
+    {
+      "id": 437,
+      "question": "Die Landeshauptstadt des Saarlandes heißt …",
+      "question_trans": "The state capital of Saarland is …",
+      "options": [
+        "Saarbrücken.",
+        "Neunkirchen.",
+        "Homburg.",
+        "Völklingen."
+      ],
+      "options_trans": [
+        "Saarbrücken.",
+        "Neunkirchen.",
+        "Homburg.",
+        "Völklingen."
+      ],
+      "correctAnswer": 1,
+      "state": "Saarland"
+    },
+    {
+      "id": 438,
+      "question": "Welches Bundesland ist das Saarland?",
+      "question_trans": "Which federal state is Saarland?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "state": "Saarland",
+      "img": "438.png"
+    },
+    {
+      "id": 439,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef des Saarlandes?",
+      "question_trans": "What is the head of government of Saarland called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Saarland"
+    },
+    {
+      "id": 440,
+      "question": "Welche Ministerin/welchen Minister hat das Saarland nicht?",
+      "question_trans": "Which minister does Saarland not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Saarland"
+    },
+    {
+      "id": 441,
+      "question": "Welches Wappen gehört zum Freistaat Sachsen?",
+      "question_trans": "Which coat of arms belongs to Sachsen?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 3,
+      "state": "Sachsen",
+      "img": "441.png"
+    },
+    {
+      "id": 442,
+      "question": "Welches ist ein Landkreis in Sachsen?",
+      "question_trans": "Which is a district (Landkreis) in Sachsen?",
+      "options": [
+        "Vogtlandkreis",
+        "Altötting",
+        "Uckermark",
+        "Nordfriesland"
+      ],
+      "options_trans": [
+        "Vogtlandkreis",
+        "Altötting",
+        "Uckermark",
+        "Nordfriesland"
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen"
+    },
+    {
+      "id": 443,
+      "question": "Für wie viele Jahre wird der Landtag in Sachsen gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Sachsen elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Sachsen"
+    },
+    {
+      "id": 444,
+      "question": "Ab welchem Alter darf man in Sachsen bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Sachsen?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 3,
+      "state": "Sachsen"
+    },
+    {
+      "id": 445,
+      "question": "Welche Farben hat die Landesflagge von Sachsen?",
+      "question_trans": "What colors does the state flag of Sachsen have?",
+      "options": [
+        "weiß-grün",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "schwarz-gelb"
+      ],
+      "options_trans": [
+        "white-green",
+        "blue-white-red",
+        "green-white-red",
+        "black-yellow"
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen"
+    },
+    {
+      "id": 446,
+      "question": "Wo können Sie sich in Sachsen über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Sachsen?",
+      "options": [
+        "bei der Landeszentrale für politische Bildung",
+        "beim Ordnungsamt der Gemeinde",
+        "bei den Kirchen",
+        "bei der Verbraucherzentrale"
+      ],
+      "options_trans": [
+        "at the State Center for Political Education",
+        "at the public order office of the municipality",
+        "at the churches",
+        "at the consumer advice center"
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen"
+    },
+    {
+      "id": 447,
+      "question": "Die Landeshauptstadt von Sachsen heißt …",
+      "question_trans": "The state capital of Sachsen is …",
+      "options": [
+        "Dresden.",
+        "Leipzig.",
+        "Chemnitz.",
+        "Zwickau."
+      ],
+      "options_trans": [
+        "Dresden.",
+        "Leipzig.",
+        "Chemnitz.",
+        "Zwickau."
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen"
+    },
+    {
+      "id": 448,
+      "question": "Welches Bundesland ist Sachsen?",
+      "question_trans": "Which federal state is Sachsen?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 3,
+      "state": "Sachsen",
+      "img": "448.png"
+    },
+    {
+      "id": 449,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Sachsen?",
+      "question_trans": "What is the head of government of Sachsen called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Sachsen"
+    },
+    {
+      "id": 450,
+      "question": "Welche Ministerin/welchen Minister hat Sachsen nicht?",
+      "question_trans": "Which minister does Sachsen not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Sachsen"
+    },
+    {
+      "id": 451,
+      "question": "Welches Wappen gehört zum Bundesland Sachsen-Anhalt?",
+      "question_trans": "Which coat of arms belongs to Sachsen-Anhalt?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 4,
+      "state": "Sachsen-Anhalt",
+      "img": "451.png"
+    },
+    {
+      "id": 452,
+      "question": "Welches ist ein Landkreis in Sachsen-Anhalt?",
+      "question_trans": "Which is a district (Landkreis) in Sachsen-Anhalt?",
+      "options": [
+        "Börde",
+        "Ammerland",
+        "Altötting",
+        "Uckermark"
+      ],
+      "options_trans": [
+        "Börde",
+        "Ammerland",
+        "Altötting",
+        "Uckermark"
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 453,
+      "question": "Für wie viele Jahre wird der Landtag in Sachsen-Anhalt gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Sachsen-Anhalt elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 454,
+      "question": "Ab welchem Alter darf man in Sachsen-Anhalt bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Sachsen-Anhalt?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 455,
+      "question": "Welche Farben hat die Landesflagge von Sachsen-Anhalt?",
+      "question_trans": "What colors does the state flag of Sachsen-Anhalt have?",
+      "options": [
+        "gelb-schwarz",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "weiß-rot"
+      ],
+      "options_trans": [
+        "yellow-black",
+        "blue-white-red",
+        "green-white-red",
+        "white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 456,
+      "question": "Wo können Sie sich in Sachsen-Anhalt über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Sachsen-Anhalt?",
+      "options": [
+        "bei den Kirchen",
+        "bei der Landeszentrale für politische Bildung",
+        "beim Ordnungsamt der Gemeinde",
+        "bei der Verbraucherzentrale"
+      ],
+      "options_trans": [
+        "at the churches",
+        "at the State Center for Political Education",
+        "at the public order office of the municipality",
+        "at the consumer advice center"
+      ],
+      "correctAnswer": 2,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 457,
+      "question": "Die Landeshauptstadt von Sachsen-Anhalt heißt …",
+      "question_trans": "The state capital of Sachsen-Anhalt is …",
+      "options": [
+        "Magdeburg.",
+        "Halle.",
+        "Dessau.",
+        "Wittenberg."
+      ],
+      "options_trans": [
+        "Magdeburg.",
+        "Halle.",
+        "Dessau.",
+        "Wittenberg."
+      ],
+      "correctAnswer": 1,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 458,
+      "question": "Welches Bundesland ist Sachsen-Anhalt?",
+      "question_trans": "Which federal state is Sachsen-Anhalt?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 4,
+      "state": "Sachsen-Anhalt",
+      "img": "458.png"
+    },
+    {
+      "id": 459,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Sachsen-Anhalt?",
+      "question_trans": "What is the head of government of Sachsen-Anhalt called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 460,
+      "question": "Welche Ministerin/welchen Minister hat Sachsen-Anhalt nicht?",
+      "question_trans": "Which minister does Sachsen-Anhalt not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Sachsen-Anhalt"
+    },
+    {
+      "id": 461,
+      "question": "Welches Wappen gehört zum Bundesland Schleswig-Holstein?",
+      "question_trans": "Which coat of arms belongs to Schleswig-Holstein?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 1,
+      "state": "Schleswig-Holstein",
+      "img": "461.png"
+    },
+    {
+      "id": 462,
+      "question": "Welches ist ein Landkreis in Schleswig-Holstein?",
+      "question_trans": "Which is a district (Landkreis) in Schleswig-Holstein?",
+      "options": [
+        "Nordfriesland",
+        "Ammerland",
+        "Mecklenburgische Seenplatte",
+        "Rhein-Sieg-Kreis"
+      ],
+      "options_trans": [
+        "Nordfriesland",
+        "Ammerland",
+        "Mecklenburgische Seenplatte",
+        "Rhein-Sieg-Kreis"
+      ],
+      "correctAnswer": 1,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 463,
+      "question": "Für wie viele Jahre wird der Landtag in Schleswig-Holstein gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Schleswig-Holstein elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 464,
+      "question": "Ab welchem Alter darf man in Schleswig-Holstein bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Schleswig-Holstein?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 465,
+      "question": "Welche Farben hat die Landesflagge von Schleswig-Holstein?",
+      "question_trans": "What colors does the state flag of Schleswig-Holstein have?",
+      "options": [
+        "blau-weiß-rot",
+        "weiß-blau",
+        "weiß-rot",
+        "grün-weiß-rot"
+      ],
+      "options_trans": [
+        "blue-white-red",
+        "white-blue",
+        "white-red",
+        "green-white-red"
+      ],
+      "correctAnswer": 1,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 466,
+      "question": "Wo können Sie sich in Schleswig-Holstein über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Schleswig-Holstein?",
+      "options": [
+        "bei der Verbraucherzentrale",
+        "beim Ordnungsamt der Gemeinde",
+        "beim / bei der Landesbeauftragten für politische Bildung",
+        "bei den Kirchen"
+      ],
+      "options_trans": [
+        "at the consumer advice center",
+        "at the public order office of the municipality",
+        "at the State Commissioner for Political Education",
+        "at the churches"
+      ],
+      "correctAnswer": 3,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 467,
+      "question": "Die Landeshauptstadt von Schleswig-Holstein heißt …",
+      "question_trans": "The state capital of Schleswig-Holstein is …",
+      "options": [
+        "Kiel.",
+        "Husum.",
+        "Flensburg.",
+        "Lübeck."
+      ],
+      "options_trans": [
+        "Kiel.",
+        "Husum.",
+        "Flensburg.",
+        "Lübeck."
+      ],
+      "correctAnswer": 1,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 468,
+      "question": "Welches Bundesland ist Schleswig-Holstein?",
+      "question_trans": "Which federal state is Schleswig-Holstein?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1,
+      "state": "Schleswig-Holstein",
+      "img": "468.png"
+    },
+    {
+      "id": 469,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Schleswig-Holstein?",
+      "question_trans": "What is the head of government of Schleswig-Holstein called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 470,
+      "question": "Welche Ministerin/welchen Minister hat Schleswig-Holstein nicht?",
+      "question_trans": "Which minister does Schleswig-Holstein not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Schleswig-Holstein"
+    },
+    {
+      "id": 471,
+      "question": "Welches Wappen gehört zum Freistaat Thüringen?",
+      "question_trans": "Which coat of arms belongs to Thüringen?",
+      "options": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3",
+        "Bild 4"
+      ],
+      "options_trans": [
+        "Picture 1",
+        "Picture 2",
+        "Picture 3",
+        "Picture 4"
+      ],
+      "correctAnswer": 2,
+      "state": "Thüringen",
+      "img": "471.png"
+    },
+    {
+      "id": 472,
+      "question": "Welches ist ein Landkreis in Thüringen?",
+      "question_trans": "Which is a district (Landkreis) in Thüringen?",
+      "options": [
+        "Wartburgkreis",
+        "Ammerland",
+        "Altötting",
+        "Nordfriesland"
+      ],
+      "options_trans": [
+        "Wartburgkreis",
+        "Ammerland",
+        "Altötting",
+        "Nordfriesland"
+      ],
+      "correctAnswer": 1,
+      "state": "Thüringen"
+    },
+    {
+      "id": 473,
+      "question": "Für wie viele Jahre wird der Landtag in Thüringen gewählt?",
+      "question_trans": "For how many years is the state parliament (Landtag) in Thüringen elected?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "options_trans": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "state": "Thüringen"
+    },
+    {
+      "id": 474,
+      "question": "Ab welchem Alter darf man in Thüringen bei Kommunalwahlen wählen?",
+      "question_trans": "From what age can you vote in local elections in Thüringen?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "options_trans": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "state": "Thüringen"
+    },
+    {
+      "id": 475,
+      "question": "Welche Farben hat die Landesflagge von Thüringen?",
+      "question_trans": "What colors does the state flag of Thüringen have?",
+      "options": [
+        "weiß-rot",
+        "blau-weiß-rot",
+        "grün-weiß-rot",
+        "schwarz-gold"
+      ],
+      "options_trans": [
+        "white-red",
+        "blue-white-red",
+        "green-white-red",
+        "black-gold"
+      ],
+      "correctAnswer": 1,
+      "state": "Thüringen"
+    },
+    {
+      "id": 476,
+      "question": "Wo können Sie sich in Thüringen über politische Themen informieren?",
+      "question_trans": "Where can you find out about political issues in Thüringen?",
+      "options": [
+        "bei den Kirchen",
+        "bei der Verbraucherzentrale",
+        "bei der Landeszentrale für politische Bildung",
+        "beim Ordnungsamt der Gemeinde"
+      ],
+      "options_trans": [
+        "at the churches",
+        "at the consumer advice center",
+        "at the State Center for Political Education",
+        "at the public order office of the municipality"
+      ],
+      "correctAnswer": 3,
+      "state": "Thüringen"
+    },
+    {
+      "id": 477,
+      "question": "Die Landeshauptstadt von Thüringen heißt …",
+      "question_trans": "The state capital of Thüringen is …",
+      "options": [
+        "Erfurt.",
+        "Eisenach.",
+        "Gera.",
+        "Jena."
+      ],
+      "options_trans": [
+        "Erfurt.",
+        "Eisenach.",
+        "Gera.",
+        "Jena."
+      ],
+      "correctAnswer": 1,
+      "state": "Thüringen"
+    },
+    {
+      "id": 478,
+      "question": "Welches Bundesland ist Thüringen?",
+      "question_trans": "Which federal state is Thüringen?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "options_trans": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 2,
+      "state": "Thüringen",
+      "img": "478.png"
+    },
+    {
+      "id": 479,
+      "question": "Wie nennt man die Regierungschefin/den Regierungschef in Thüringen?",
+      "question_trans": "What is the head of government of Thüringen called?",
+      "options": [
+        "Erste Ministerin/Erster Minister",
+        "Premierministerin/Premierminister",
+        "Bürgermeisterin/Bürgermeister",
+        "Ministerpräsidentin/Ministerpräsident"
+      ],
+      "options_trans": [
+        "First Minister",
+        "Prime Minister",
+        "Mayor",
+        "Minister-President"
+      ],
+      "correctAnswer": 4,
+      "state": "Thüringen"
+    },
+    {
+      "id": 480,
+      "question": "Welche Ministerin/welchen Minister hat Thüringen nicht?",
+      "question_trans": "Which minister does Thüringen not have?",
+      "options": [
+        "Justizministerin/Justizminister",
+        "Außenministerin/Außenminister",
+        "Finanzministerin/Finanzminister",
+        "Innenministerin/Innenminister"
+      ],
+      "options_trans": [
+        "Minister of Justice",
+        "Minister of Foreign Affairs",
+        "Minister of Finance",
+        "Minister of the Interior"
+      ],
+      "correctAnswer": 2,
+      "state": "Thüringen"
     }
   ]
 }

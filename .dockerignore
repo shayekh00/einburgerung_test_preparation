@@ -1,0 +1,11 @@
+.git
+__pycache__
+test
+source-data
+*.pdf
+einbuergerungstest-study-guide*.html
+generate_study_guide.py
+readme.md
+Dockerfile
+docker-compose.yml
+.dockerignore

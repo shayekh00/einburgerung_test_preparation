@@ -1,6 +1,6 @@
 ### Description
 
-All 310 questions and answers about the naturalization test of the Federal Republic of Germany and Berlin.
+All 300 general questions plus the state-specific (Landesteil) questions for all 16 Bundesländer, for the naturalization test of the Federal Republic of Germany.
 
 ### Source material
 
@@ -15,6 +15,15 @@ https://oet.bamf.de/ords/oetut/f?p=514:1::::::
 https://github.com/LibreTranslate/LibreTranslate?tab=readme-ov-file
 
 ### Run locally
+
+**Docker (recommended):**
+
+run `docker compose up -d --build` in repo root.
+navigate to `localhost:8080`.
+
+stop with `docker compose down`.
+
+**Without Docker:**
 
 run `python3 -m http.server` in repo root.
 navigate to `localhost:8000`.
