@@ -44,6 +44,14 @@
                 </select>
             </div>
 
+            <div class="field-group">
+                <span class="field-label">Spalten</span>
+                <select id="columnsSelect">
+                    <option value="1">1 Spalte</option>
+                    <option value="2">2 Spalten</option>
+                </select>
+            </div>
+
             <button id="restartBtn">New Test</button>
 
             <div class="theme-switch-wrapper">
@@ -120,11 +128,13 @@
         const totalQuestionsElement = document.getElementById('totalQuestions');
         const finalTotalQuestionsElement = document.getElementById('finalTotalQuestions');
         const stateSelect = document.getElementById('stateSelect');
+        const columnsSelect = document.getElementById('columnsSelect');
         const subtitleText = document.getElementById('subtitleText');
 
         let allQuestions = [];
         const storedState = localStorage.getItem('selectedState');
         let selectedState = storedState !== null ? storedState : 'Rheinland-Pfalz';
+        let columnCount = parseInt(localStorage.getItem('columnCount'), 10) || 1;
 
         function filterQuestionsByState(questionList, state) {
             if (!state) {
@@ -137,6 +147,11 @@
             subtitleText.textContent = selectedState
                 ? `Übungstest für ${selectedState}`
                 : 'Übungstest, alle Bundesländer';
+        }
+
+        function applyColumnLayout() {
+            questionsContainer.classList.toggle('columns-2', columnCount === 2);
+            document.body.classList.toggle('wide', columnCount === 2);
         }
 
         // Event listeners
@@ -152,8 +167,15 @@
             updateSubtitle();
             startNewTest();
         });
+        columnsSelect.addEventListener('change', (event) => {
+            columnCount = parseInt(event.target.value, 10);
+            localStorage.setItem('columnCount', columnCount);
+            applyColumnLayout();
+        });
 
         stateSelect.value = selectedState;
+        columnsSelect.value = String(columnCount);
+        applyColumnLayout();
         updateSubtitle();
 
         // Check for saved theme preference
