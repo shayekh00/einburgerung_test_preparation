@@ -354,8 +354,20 @@
             finalTotalQuestionsElement.textContent = selectedQuestions.length;
         }
 
-        // Select questions for this test: a random 33 normally,
-        // or every currently-missed question in review mode
+        // Fisher-Yates shuffle, returns a new shuffled array
+        function shuffle(array) {
+            const copy = [...array];
+            for (let i = copy.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [copy[i], copy[j]] = [copy[j], copy[i]];
+            }
+            return copy;
+        }
+
+        // Select questions for this test: always 33, drawn fresh at random.
+        // With a Bundesland selected, 3 of the 33 are that state's own
+        // questions (matching the real exam), the rest are general questions.
+        // In review mode, every currently-missed question is selected instead.
         function selectRandomQuestions() {
             if (isMissedReviewMode) {
                 const missedQuestionIds = new Set(MissedQuestions.getMissedQuestionIds());
@@ -363,17 +375,19 @@
                 return;
             }
 
-            // Create a copy of all questions
-            const allQuestions = [...questions];
+            const generalPool = questions.filter(question => !question.state);
 
-            // Shuffle the array
-            for (let i = allQuestions.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+            let picked;
+            if (selectedState) {
+                const statePool = questions.filter(question => question.state === selectedState);
+                const stateQuestions = shuffle(statePool).slice(0, 3);
+                const generalQuestions = shuffle(generalPool).slice(0, 33 - stateQuestions.length);
+                picked = [...generalQuestions, ...stateQuestions];
+            } else {
+                picked = shuffle(generalPool).slice(0, 33);
             }
 
-            // Take the first 33 or all if less than 33
-            selectedQuestions = allQuestions.slice(0, Math.min(33, allQuestions.length));
+            selectedQuestions = shuffle(picked);
         }
         
         // Display all selected questions
@@ -610,8 +624,11 @@
             updateMissedCount();
 
             if (questions.length > 0) {
+                // Only the missed-questions review resumes an in-progress session;
+                // a normal 33-question test is always drawn fresh on navigation.
                 const savedSession = loadQuizSession();
-                const canResumeSavedSession = savedSession
+                const canResumeSavedSession = isMissedReviewMode
+                    && savedSession
                     && savedSession.isMissedReviewMode === isMissedReviewMode
                     && savedSession.selectedQuestionIds.length > 0;
 
